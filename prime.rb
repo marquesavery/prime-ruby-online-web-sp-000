@@ -1,8 +1,7 @@
 
 def prime?(number)
-  if number > 1 && number / number == 1 && number / 1 == number
-    true
-  else
-    false
+  (2..(number - 1)).each do |n|
+    return false if number % n == 0
   end
+  true
 end
