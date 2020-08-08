@@ -1,6 +1,7 @@
 
 def prime?(number)
   n = 2
+  return false if number.negative? 
   while n < number
     return false if number % n == 0
     n += 1
